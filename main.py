@@ -20,7 +20,7 @@ def create_diff(old_file, new_file):
     delta = difflib.unified_diff(file_1, file_2, old_file.name, new_file.name)
     sys.stdout.writelines(delta)
 
-    Return None 
+    return None
 
 
 def main():
@@ -33,7 +33,7 @@ def main():
     new_file = Path(args.new_file_version)
 
     create_diff(old_file, new_file)
-    return None 
+    return None
 
 
 if __name__ == "__main__":
